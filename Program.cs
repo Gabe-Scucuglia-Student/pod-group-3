@@ -14,10 +14,6 @@ namespace UserProfileApp
             // Issue 1: Fix typos in the welcome message and comments
             Console.WriteLine("Welcom to the User Profle Manager!");
 
-
-            // Issue 5: Delete these extra blank lines above and below
-
-
             // Issue 4: Change 'var' to explicit types (string, int, bool)
             var firstName = "Alex";
             var lastName = "Rivera";
@@ -25,7 +21,7 @@ namespace UserProfileApp
             var isActive = true;
 
             // Issue 3: Use string.IsNullOrWhiteSpace() instead of null/empty checks
-            if (firstName == null || firstName == "" || firstName == " ")
+            if (string.IsNullOrWhiteSpace(firstName))
             {
                 Console.WriteLine("Error: First name canot be empty.");
                 return;
