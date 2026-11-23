@@ -15,10 +15,10 @@ namespace UserProfileApp
             Console.WriteLine("Welcome to the User Profile Manager!");
 
             // Issue 4: Change 'var' to explicit types (string, int, bool)
-            var firstName = "Alex";
-            var lastName = "Rivera";
-            var userAge = 16;
-            var isActive = true;
+            string firstName = "Alex";
+            string lastName = "Rivera";
+            int userAge = 16;
+            bool isActive = true;
 
             // Issue 3: Use string.IsNullOrWhiteSpace() instead of null/empty checks
             if (string.IsNullOrWhiteSpace(firstName))
