@@ -28,7 +28,7 @@ namespace UserProfileApp
             }
 
             // Issue 6: Use String Interpolation ($"...") instead of '+' signs
-            string summary = "User: " + firstName + " " + lastName + " | Age: " + userAge + " | Active: " + isActive;
+            string summary = $"User: {firstName} {lastName} | Age: {userAge} | Active: {isActive}";
             
             Console.WriteLine(summary);
             Console.WriteLine("Profile loaded successfully!");
