@@ -12,7 +12,7 @@ namespace UserProfileApp
         static void Main(string[] args)
         {
             // Issue 1: Fix typos in the welcome message and comments
-            Console.WriteLine("Welcom to the User Profle Manager!");
+            Console.WriteLine("Welcome to the User Profile Manager!");
 
 
             // Issue 5: Delete these extra blank lines above and below
@@ -27,7 +27,7 @@ namespace UserProfileApp
             // Issue 3: Use string.IsNullOrWhiteSpace() instead of null/empty checks
             if (firstName == null || firstName == "" || firstName == " ")
             {
-                Console.WriteLine("Error: First name canot be empty.");
+                Console.WriteLine("Error: First name cannot be empty.");
                 return;
             }
 
@@ -35,7 +35,7 @@ namespace UserProfileApp
             string summary = "User: " + firstName + " " + lastName + " | Age: " + userAge + " | Active: " + isActive;
             
             Console.WriteLine(summary);
-            Console.WriteLine("Profil loaded sucessfully!");
+            Console.WriteLine("Profile loaded successfully!");
         }
     }
 }
